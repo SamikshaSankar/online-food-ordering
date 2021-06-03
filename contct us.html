@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Connect Us </title>
+	<link rel="stylesheet" type="text/css" href="contct us.css">
+</head>
+<body>
+	<div class="heading">
+	<h1></h1>
+	</div>
+	<div class="matter">
+	<p>
+	Address : park street,stanford college,mumbai,India
+	<br>
+	pin code : 768 790
+	<br>
+	Telephone number : 020 58787 84787
+	<br>
+	mail us : khanakhajana14@gmail.com
+    </p>
+    </div>
+    <br>
+    <h3>Follow our location for visit</h3>
+	<div id="googleMap" style="width:80%;height:400px;"></div>
+
+	<script>
+	function myMap()
+	{
+		var mapProp= 
+		{
+	  		center:new google.maps.LatLng(5.508742,-0.120850),
+	  		zoom:5,
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+	<body>
+
+
+<h2>Give Us Feedback</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+
+</body>
+</html>

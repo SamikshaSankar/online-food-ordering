@@ -1,0 +1,160 @@
+<html>
+    <html lang="en">
+<head>
+       <meta charset="utf-8">  
+    <title>Khana Khajana</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="rest1.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+<body>
+    <div class="a">
+      
+
+	<script type="text/javascript" src="js/background.cycle.js"></script>
+    
+        
+         <div class="header" id="myHeader">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="k2.jpg" height="60" width="60">
+    </div>
+            <div class="nav-links" id="nav-links">
+                <font color="white"><i class="fa fa-close" onclick="closeMenu()"></i></font>
+            <ul>
+                <a href="index.html"><li><b>Home</b></li></a>
+                <a href="about_us.html"><li>About Us</li></a>
+                <a href="menu.html"><li>Menu</li></a>
+                <a href="contct%20us.html"><li>Contact Us</li></a>
+                <a href="r.html"><li>Review</li></a>
+                </ul>
+                <button type="button" class="btn"><a href="signin-signup.html">Sign-Up</a></button>
+            </div>
+            <font color="white"><i class="fa fa-bars" onclick="showMenu()"></i></font>
+        </div>
+       </div>
+        <div class="container2">
+		<div class="colck">
+			<h2 class="font">
+<font color=" #ffff99">
+				<span id="hours">12</span>
+				<span>:</span>
+				<span id="minutes">60</span>
+				<span>:</span>
+				<span id="seconds">60</span>
+				<span id="am-or-pm">AM</span><br>
+    
+    <Font size="5px"><font color="white"><div class="x"><P>OPEN EVERYDAY FROM 11AM TO 12PM</P></div></font></Font>
+                </font>
+                
+			</h2>
+		</div>
+	</div>
+        <script>
+        function updateTime(){
+		var dateTime = new Date();
+		var hours = dateTime.getHours();
+		var minutes = dateTime.getMinutes();
+		var seconds = dateTime.getSeconds();
+		var am_or_pm = document.getElementById("am-or-pm");
+
+		if(hours >= 12){
+			am_or_pm.innerHTML = 'PM';
+		}else{
+			am_or_pm.innerHTML = 'AM';
+		}
+
+		if(hours > 12){
+			hours = hours - 12;
+		}
+
+		document.getElementById("hours").innerHTML=hours;
+		document.getElementById("minutes").innerHTML=minutes;
+		document.getElementById("seconds").innerHTML=seconds;
+	}
+	setInterval( updateTime, 1000);
+        </script>
+        <div class="banner-title">
+            
+            <section2>
+		<video 
+			 src="G:\A codes\HTML + CSS\shape\5.Text_with_smoke\1.mp4" autoplay muted loop>
+		</video>
+			<h1>
+                
+				<span>K</span>
+				<span>H</span>
+				<span>A</span>
+                <span>A</span>
+				<span>N</span>
+				<span>A</span>
+                <span></span>
+                &nbsp;
+                <div class="d">
+				<span>K</span>
+				<span>H</span>
+				<span>A</span>
+				<span>Z</span>
+				<span>A</span>
+				<span>N</span>
+				<span>A</span>
+                </div>
+                
+                
+                
+
+			</h1>
+                
+	</section2>
+            <center><a href="https://forms.gle/BVSAyYMGZCkT3rZh9" class="myButton2">Order Now!</a></center>
+            </div>
+        <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+            <i class="fa fa-list"></i>
+            </div>
+        <div class="social-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+       
+    </div>
+    </div>
+        <div class="notifications">
+            <div claass="contents"></div>
+            <p><B><font size="5"><center><div class="z">10K+ Customers</div></center></font></B></p>
+           
+            <div class="notifications-img"></div>
+            <img src="index.jpg">
+    </div>
+    
+    <script>
+    var show = document.getElementById("nav-links");
+    function showMenu(){
+       show.style.right = "0"; 
+    }
+        function closeMenu(){
+       show.style.right = "-200px"; 
+    }
+    </script>
+    <div class="e"><center>2020@Khana Khajana</center></div>
+        </body>
+    </html>
+    
